@@ -193,7 +193,7 @@ export function Hero() {
               </motion.button>
 
               <motion.a
-                href="https://drive.google.com/file/d/156PRtBS7wmv8YSc_7srmbNi7mz0h6nfj/view?usp=sharing"
+                href="https://drive.google.com/file/d/1B3o6h8EM6-RiDOysDdc_Yqf2qKmE6D8Y/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ 

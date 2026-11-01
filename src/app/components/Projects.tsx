@@ -12,15 +12,25 @@ interface Project {
 
 /* ─── Data ───────────────────────────────────────────────── */
 const featured: Project = {
-  title: "API Gateway",
-  tags: ["Node.js", "Express.js", "MongoDB", "Redis", "JWT"],
+  title: "RepoDock-MCP",
+  tags: ["Python", "FastMCP", "MCP", "GitHub", "Docker"],
   description:
-    "Built a secure API Gateway to centralize authentication, API key management, and request forwarding. Added Redis-based rate limiting with usage tiers, request logging, and filterable, paginated analytics endpoints.",
-  url: "https://github.com/RAJPRASHUL/api-gateway",
-  impact: "Authentication · Tiered rate limiting · Request analytics",
+    "Built a local MCP server that gives AI clients controlled access to GitHub and Docker. Includes read-only tools, audit logging, redacted outputs, and optional write actions that require explicit confirmation.",
+  url: "https://github.com/RAJPRASHUL/repodock-mcp",
+  impact: "GitHub · Docker · Human-confirmed actions",
 };
 
 const bentoProjects: (Project & { colSpan: number; rowSpan: number })[] = [
+  {
+    title: "API Gateway",
+    tags: ["Node.js", "Express.js", "MongoDB", "Redis", "JWT"],
+    description:
+      "Built a secure API Gateway to centralize authentication, API key management, and request forwarding. Added Redis-based rate limiting with usage tiers, request logging, and filterable, paginated analytics endpoints.",
+    url: "https://github.com/RAJPRASHUL/api-gateway",
+    impact: "Authentication · Tiered rate limiting · Request analytics",
+    colSpan: 3,
+    rowSpan: 1,
+  },
   {
     title: "Tiny URL — URL Shortener",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
@@ -155,10 +165,10 @@ export function Projects() {
             style={{ background: "#00B4D8", borderLeft: "0", borderBottom: "3px solid #1A1A1A" }}
           >
             <span style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color: "#1A1A1A" }}>
-              SECURE
+              AI DEVOPS
             </span>
             <span style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#1A1A1A" }} className="opacity-70 mt-1">
-              API GATEWAY
+              MCP SERVER
             </span>
           </div>
 
@@ -193,7 +203,7 @@ export function Projects() {
                   </span>
                 ))}
               </div>
-              <p style={{ fontFamily: "sans-serif", fontSize: 12 }} className="leading-relaxed mb-2">
+              <p style={{ fontFamily: "sans-serif", fontSize: 12, fontWeight: 700 }} className="leading-relaxed mb-2">
                 {featured.description}
               </p>
 
