@@ -83,7 +83,7 @@ export function Contact() {
               boxShadow: "5px 5px 0px #00B4D8",
               fontFamily: 'var(--font-mono)'
             }}
-            className="inline-block bg-[#00B4D8] text-[#F5F0E8] border-[3px] border-[#00B4D8] px-8 py-4 font-bold uppercase tracking-wider"
+            className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-[#00B4D8] text-[#F5F0E8] border-[3px] border-[#00B4D8] px-8 py-4 font-bold uppercase tracking-wider"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -94,8 +94,8 @@ export function Contact() {
               transition: { type: "spring", stiffness: 400 }
             }}
           >
-            <Mail className="inline w-5 h-5 mr-2" />
-            prashulraj522@gmail.com
+            <Mail className="w-5 h-5 shrink-0" />
+            <span className="break-all">prashulraj522@gmail.com</span>
           </motion.a>
 
           {/* Social Links */}

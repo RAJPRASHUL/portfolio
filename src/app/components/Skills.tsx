@@ -139,10 +139,6 @@ export function Skills() {
       {/* PART 1 — Full-width marquee (3 rows) */}
       <motion.div
         className="mb-16 space-y-4"
-        style={{
-          width: "100vw",
-          marginLeft: "calc(-50vw + 50%)",
-        }}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
